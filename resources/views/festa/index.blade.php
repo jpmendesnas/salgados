@@ -28,7 +28,7 @@
                             </div>
                         </form>
                     </painel>
-                    <painel titulo="Dashboard" cor="panel-info">
+                    <painel titulo="Resultado" cor="panel-info">
                         <lista v-bind:resultado="{{$response}}"></lista>
                     </painel>
                 </painel>

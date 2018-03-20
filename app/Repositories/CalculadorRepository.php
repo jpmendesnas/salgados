@@ -14,8 +14,8 @@ class CalculadorRepository
 {
 
     public function calcularCompras(Pedido $pedido){
-        $qtdAdultos         = $pedido->getAdultos();
-        $qtdCriancas        = $pedido->getCriancas();
+        $qtdAdultos          = $pedido->getAdultos();
+        $qtdCriancas         = $pedido->getCriancas();
 
         //100 salgadas para cada 10 adultos
         $qtdSalgadosAdultos  =  (int)($qtdAdultos/10)* 100;
