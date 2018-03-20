@@ -17,6 +17,7 @@ window.Vue = require('vue');
 
 Vue.component('topo', require('./components/Topo.vue'));
 Vue.component('painel', require('./components/Painel.vue'));
+Vue.component('lista', require('./components/TabelaLista.vue'));
 
 const app = new Vue({
     el: '#app'

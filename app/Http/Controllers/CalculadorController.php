@@ -20,8 +20,8 @@ class CalculadorController extends Controller
      */
     public function index()
     {
-        $resultado = json_encode([]);
-        return view('festa.index');
+        $response = json_encode([]);
+        return view('festa.index',compact('response'));
     }
 
     /**
@@ -40,13 +40,13 @@ class CalculadorController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request,Pedido $pedido, CalculadorRepository $repository )
+    public function store(Request $request, CalculadorRepository $repository, Pedido $pedido)
     {
         $pedido->setAdultos($request['adultos']);
         $pedido->setCriancas($request['criancas']);
         $pedido->setTemBebida($request['bebida']);
-
-        return $repository->calcularCompras($pedido);
+        $response = $repository->calcularCompras($pedido);
+        return  view('festa.index', compact('response'));
     }
 
     /**

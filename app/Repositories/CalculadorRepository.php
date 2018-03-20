@@ -44,6 +44,8 @@ class CalculadorRepository
         }
 
         return  array(
+            'qtdCerveja' => 0,
+            'qtdWhisky'  => 0,
             'qtdSalgados'=> $qtdSalgadosAdultos+$qtdSalgadosCriancas,
             'qtdCarne'   => $qtdCarne,
             'qtdRefri'   => $qtdRefri,

@@ -18,5 +18,5 @@
 Auth::routes();
 
 Route::get('/', 'CalculadorController@index')->name('home');
-Route::get('/calcular', 'CalculadorController@store')->name('calcular');
+Route::post('/calcular', 'CalculadorController@store')->name('calcular');
 
