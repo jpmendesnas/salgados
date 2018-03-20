@@ -43511,6 +43511,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     props: ['resultado']
@@ -43530,16 +43532,28 @@ var render = function() {
       _vm._v(" "),
       _c("tr", [
         _c("td", _vm._b({}, "td", _vm.resultado, false), [
-          _vm._v(_vm._s(_vm.resultado.qtdCerveja))
+          _vm._v(_vm._s(_vm.resultado.qtdCerveja + "LATAS"))
         ]),
         _vm._v(" "),
-        _c("td", [_vm._v("aa")]),
+        _c("td", _vm._b({}, "td", _vm.resultado, false), [
+          _vm._v(_vm._s(_vm.resultado.qtdWhisky + "L"))
+        ]),
         _vm._v(" "),
-        _c("td", [_vm._v("aa")]),
+        _c("td", _vm._b({}, "td", _vm.resultado, false), [
+          _vm._v(_vm._s(_vm.resultado.qtdSalgados + "UN"))
+        ]),
         _vm._v(" "),
-        _c("td", [_vm._v("aa")]),
+        _c("td", _vm._b({}, "td", _vm.resultado, false), [
+          _vm._v(_vm._s(_vm.resultado.qtdCarne + "KG"))
+        ]),
         _vm._v(" "),
-        _c("td", [_vm._v("aa")])
+        _c("td", _vm._b({}, "td", _vm.resultado, false), [
+          _vm._v(_vm._s(_vm.resultado.qtdRefri + "L"))
+        ]),
+        _vm._v(" "),
+        _c("td", _vm._b({}, "td", _vm.resultado, false), [
+          _vm._v(_vm._s(_vm.resultado.qtdDoces + "UN"))
+        ])
       ])
     ])
   ])
@@ -43554,11 +43568,13 @@ var staticRenderFns = [
       _vm._v(" "),
       _c("th", [_vm._v("Whisky")]),
       _vm._v(" "),
-      _c("th", [_vm._v("Doces")]),
-      _vm._v(" "),
       _c("th", [_vm._v("Salgados")]),
       _vm._v(" "),
-      _c("th", [_vm._v("Carne")])
+      _c("th", [_vm._v("Carne")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Refri")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Doces")])
     ])
   }
 ]

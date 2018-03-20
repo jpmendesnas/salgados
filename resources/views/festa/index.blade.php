@@ -18,9 +18,9 @@
                             </div>
                             <div>
                                 <label for="bebida">Bebida alcólica?</label>
-                                <input required type="radio" id="bebida"  name="bebida" value="N"
+                                <input required type="radio" id="bebida"  name="bebida" value="S"
                                        placeholder="Quantidade de Adultos">Sim
-                                <input required type="radio" id="bebida" name="bebida"  value="S"
+                                <input required type="radio" id="bebida" name="bebida"  value="N"
                                        placeholder="Quantidade de Adultos">Não
                             </div>
                             <div class="btn-group">

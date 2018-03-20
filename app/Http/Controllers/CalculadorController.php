@@ -45,7 +45,7 @@ class CalculadorController extends Controller
         $pedido->setAdultos($request['adultos']);
         $pedido->setCriancas($request['criancas']);
         $pedido->setTemBebida($request['bebida']);
-        $response = $repository->calcularCompras($pedido);
+        $response = json_encode($repository->calcularCompras($pedido));
         return  view('festa.index', compact('response'));
     }
 

@@ -27,25 +27,13 @@ class CalculadorRepository
         $qtdDoces            = (int)($qtdCriancas/4)* 5;
 
         //calcular carne
-        $qtdCarne            = (int)(($qtdCriancas+$qtdSalgadosAdultos)/6)* 1;
+        $qtdCarne            = (int)(($qtdCriancas+$qtdAdultos)/6)* 1;
 
         //calcula refrigerante
-        $qtdRefri            = (int)(($qtdCriancas+$qtdSalgadosAdultos)/4)* 2;
-
-        if( $pedido->getTemBebida() == 'S') {
-            return   array(
-               'qtdCerveja' => ((int)($qtdAdultos/3)* 12) - $qtdCriancas,
-               'qtdWhisky'  => (int)($qtdAdultos/30)* 1,
-               'qtdSalgados'=> $qtdSalgadosAdultos+$qtdSalgadosCriancas,
-               'qtdCarne'   => $qtdCarne,
-               'qtdRefri'   => $qtdRefri,
-               'qtdDoces'   => $qtdDoces
-            );
-        }
-
+        $qtdRefri            = (int)(($qtdCriancas+$qtdAdultos)/4)* 2;
         return  array(
-            'qtdCerveja' => 0,
-            'qtdWhisky'  => 0,
+            'qtdCerveja' => $pedido->getTemBebida() == 'S' ? ((int)($qtdAdultos/3)* 12) - $qtdCriancas : 0,
+            'qtdWhisky'  => $pedido->getTemBebida() == 'S' ? ((int)($qtdAdultos/30))* 1 : 0,
             'qtdSalgados'=> $qtdSalgadosAdultos+$qtdSalgadosCriancas,
             'qtdCarne'   => $qtdCarne,
             'qtdRefri'   => $qtdRefri,
