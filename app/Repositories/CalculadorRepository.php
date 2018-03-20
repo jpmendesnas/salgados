@@ -31,8 +31,9 @@ class CalculadorRepository
 
         //calcula refrigerante
         $qtdRefri            = (int)(($qtdCriancas+$qtdAdultos)/4)* 2;
+        $cerveja             = ((int)($qtdAdultos/3)* 12) - $qtdCriancas;
         return  array(
-            'qtdCerveja' => $pedido->getTemBebida() == 'S' ? ((int)($qtdAdultos/3)* 12) - $qtdCriancas : 0,
+            'qtdCerveja' => $pedido->getTemBebida() == 'S' && $cerveja >= 0 ? $cerveja : 0,
             'qtdWhisky'  => $pedido->getTemBebida() == 'S' ? ((int)($qtdAdultos/30))* 1 : 0,
             'qtdSalgados'=> $qtdSalgadosAdultos+$qtdSalgadosCriancas,
             'qtdCarne'   => $qtdCarne,

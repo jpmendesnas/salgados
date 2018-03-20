@@ -11,12 +11,12 @@
                 <th>Doces</th>
             </tr>
             <tr>
-                <td v-bind="resultado">{{resultado.qtdCerveja+'LATAS'}}</td>
-                <td v-bind="resultado">{{resultado.qtdWhisky+'L'}}</td>
-                <td v-bind="resultado">{{resultado.qtdSalgados+'UN'}}</td>
-                <td v-bind="resultado">{{resultado.qtdCarne+'KG'}}</td>
-                <td v-bind="resultado">{{resultado.qtdRefri+'L'}}</td>
-                <td v-bind="resultado">{{resultado.qtdDoces+'UN'}}</td>
+                <td v-bind="resultado">{{resultado.qtdCerveja+' LATAS'}}</td>
+                <td v-bind="resultado">{{resultado.qtdWhisky+' L'}}</td>
+                <td v-bind="resultado">{{resultado.qtdSalgados+' UN'}}</td>
+                <td v-bind="resultado">{{resultado.qtdCarne+' KG'}}</td>
+                <td v-bind="resultado">{{resultado.qtdRefri+' L'}}</td>
+                <td v-bind="resultado">{{resultado.qtdDoces+' UN'}}</td>
             </tr>
             </tbody>
 

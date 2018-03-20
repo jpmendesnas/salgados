@@ -43532,27 +43532,27 @@ var render = function() {
       _vm._v(" "),
       _c("tr", [
         _c("td", _vm._b({}, "td", _vm.resultado, false), [
-          _vm._v(_vm._s(_vm.resultado.qtdCerveja + "LATAS"))
+          _vm._v(_vm._s(_vm.resultado.qtdCerveja + " LATAS"))
         ]),
         _vm._v(" "),
         _c("td", _vm._b({}, "td", _vm.resultado, false), [
-          _vm._v(_vm._s(_vm.resultado.qtdWhisky + "L"))
+          _vm._v(_vm._s(_vm.resultado.qtdWhisky + " L"))
         ]),
         _vm._v(" "),
         _c("td", _vm._b({}, "td", _vm.resultado, false), [
-          _vm._v(_vm._s(_vm.resultado.qtdSalgados + "UN"))
+          _vm._v(_vm._s(_vm.resultado.qtdSalgados + " UN"))
         ]),
         _vm._v(" "),
         _c("td", _vm._b({}, "td", _vm.resultado, false), [
-          _vm._v(_vm._s(_vm.resultado.qtdCarne + "KG"))
+          _vm._v(_vm._s(_vm.resultado.qtdCarne + " KG"))
         ]),
         _vm._v(" "),
         _c("td", _vm._b({}, "td", _vm.resultado, false), [
-          _vm._v(_vm._s(_vm.resultado.qtdRefri + "L"))
+          _vm._v(_vm._s(_vm.resultado.qtdRefri + " L"))
         ]),
         _vm._v(" "),
         _c("td", _vm._b({}, "td", _vm.resultado, false), [
-          _vm._v(_vm._s(_vm.resultado.qtdDoces + "UN"))
+          _vm._v(_vm._s(_vm.resultado.qtdDoces + " UN"))
         ])
       ])
     ])
